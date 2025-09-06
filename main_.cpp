@@ -15,7 +15,7 @@ int main() {
         {0, 2, 6, 0, 0}
     };
 
-    // Count non-zero elements
+    // non-zero elements
     int count = 0;
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    // Create array for storing sparse matrix
+    // array 
     Element sparse[count];
     int k = 0;
 
@@ -39,7 +39,7 @@ int main() {
         }
     }
 
-    // Print sparse matrix representation
+    // Print 
     cout << "Row\tCol\tValue\n";
     for (int i = 0; i < count; i++) {
         cout << sparse[i].row << "\t"
@@ -49,3 +49,4 @@ int main() {
 
     return 0;
 }
+
